@@ -1,13 +1,32 @@
 <!-- header.html -->
-<header>
-    <div>
-        <h3>Genshin</h3>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<header class="site_header">
+       <div class="container site_container ">
+       <div class="site_first-part">
+        <div id="toggle">
+            <input type="checkbox">
+            <span></span>
+        </div>
+        <h3 class="site_logo">Genshin</h3>
+        <nav class="site_nav">
+            <ul class="site_list">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+       </div>
+        <button class="site_login">Sign In</button>
+       </div>
+       <div  class="site_over-lay">
+        <div class="site_over-lay_parent">
+                    <ul>
+                        <li class="site_over-lay_list"><a href="#">HOME</a></li>
+                        <li class="site_over-lay_list"><a href="#">PROJECTS</a></li>
+                        <li class="site_over-lay_list"><a href="#">ABOUT</a></li>
+                        <li class="site_over-lay_list"><a href="#">CONTACT</a></li>
+                        <button class="site_login site_over-lay_list">Sign In</button>
+                    </ul>
+        </div>
+       </div>
 </header>

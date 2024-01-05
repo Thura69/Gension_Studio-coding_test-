@@ -1,0 +1,105 @@
+.site_home_parent{
+    display: flex;
+    position: relative;
+    height: 700px;
+}
+
+.site_home_content{
+    width: 60%;
+    height: 100%;
+    margin: 0 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-top:var(--header-height);
+    position: relative;
+
+}
+.site_content_container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.site_home_header{
+
+    width: 704px;
+    font-size: var(--biggest-font-size);
+}
+.site_home_p{
+    margin-top: 25px;
+    color:var(--text-color);
+    font-size: var(--normal-font-size);
+}
+.site_home_img{
+    width: 45%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/pv_ka_TMH_Bronte-0022.jpg');
+}
+
+.site_home_search{
+    border:1px solid black;
+    width: 100%;
+    bottom: 0;
+    background-color:white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+
+.site_home_search_cat,.site_home_search_detail{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.site_home_search_input{
+  background-color: white;
+  border:1px solid black;
+  padding:10px;
+  height: 45px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.site_home_search_button{
+    padding: 13px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.site_designs_drop{
+    position: absolute;
+    top:100%;
+    left: 0;
+    transition: all 500s ease;
+    height: 0;
+    overflow: hidden;
+    background-color: rgb(197, 92, 92);
+    width: 100%;
+}
+.site_designs_drop_active{
+    height:auto;
+}
+
+.drop_down_icon{
+  transition: all 300ms ease;
+}
+.drop_down_icon_active{
+    transform: rotate(180deg);
+}
+.site_designs_drop ul {
+    display: flex;
+    padding:10px;
+    background-color: white;
+    border:1px solid black;
+    flex-direction: column;
+    gap: 7px;
+}
