@@ -1,0 +1,129 @@
+#site_contact{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.site_contact_parent{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+
+}
+.site_contact_img_container img{
+    width:450px;
+
+}
+.site_contact_img_two{
+    height:200px;
+    position: absolute;
+    right: 100px;
+    bottom:0px;
+    border:1px solid var(--text-color);
+    padding:10px;
+    display: none;
+    transform: translateX( 100px);
+} 
+
+.site_contact_content_container{
+    width: 100%;
+    gap: 10px;
+    text-align: start;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    font-size: var(--small-font-size);
+}
+.site_contact_content_header{
+    margin-top: 20px;
+    font-size: var(--h1-font-size);
+}
+
+.site_contact_button_container{
+    display: flex;
+    align-items: center;
+    gap:0px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.site_contact_button_button{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--smaller-font-size);
+
+}
+.site_contact_button_button img{
+    width: 25px;
+    font-weight: 200;
+    /* border-radius: 5px;
+    box-shadow: 4px 3px 8px -4px rgba(119, 119, 119, 0.75);
+        -webkit-box-shadow: 4px 3px 8px -4px rgba(97, 96, 96, 0.75);
+        -moz-box-shadow: 4px 3px 8px -4px rgba(78, 78, 78, 0.75); */
+}
+
+/* Small screens */
+@media screen and (min-width: 640px) {
+    /* Styles for screens equal to or larger than 640px */
+}
+
+/* Medium screens */
+@media screen and (min-width: 768px) {
+    .site_contact_parent {
+        flex-direction: row;
+        gap:30px;
+    }
+    .site_contact_img_two{
+        display: initial;
+    }
+    .site_contact_img_container img{
+        width: 550px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1024px) {
+    .site_home_img_container {
+        display: initial;
+    }
+
+    .site_home_search {
+        margin-top: 30px;
+    }
+    .site_contact_img_container img {
+         width: 450px;
+     }
+    .site_contact_img_two{
+        height: 200px;
+        bottom: 0px;
+    }
+    .site_contact_content_header{
+        margin-top: 20px;
+    }
+}
+
+/* Extra Large screens */
+@media screen and (min-width: 1280px) {
+#site_contact{
+    margin-top: 150px;
+    margin-bottom: 120px;
+}
+.site_contact_content_container{
+    width: 50%;
+}
+ .site_contact_img_two {
+     height: 250px;
+     bottom: 80px;
+ }
+
+    /* Styles for screens equal to or larger than 1280px */
+}
+
+/* 2 Extra Large screens */
+@media screen and (min-width: 1536px) {
+    /* Styles for screens equal to or larger than 1536px */
+}

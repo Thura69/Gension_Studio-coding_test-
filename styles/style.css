@@ -10,7 +10,7 @@
     --first-color-alt: #61716c;
     --title-color: hsl(355, 4%, 15%);
     --text-color: #404A47;
-    --text-color-light: #394340;
+    --text-color-light: #515d59;
     --body-color: #fff;
     --container-color: #fff;
 
@@ -18,7 +18,7 @@
     --body-font: 'Hind Madurai', sans-serif;
     --logo-font: 'Lora', serif;
     --header-font:'Montserrat', sans-serif;
-    --biggest-font-size: 10.5rem;
+    --biggest-font-size: 1.5rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
@@ -118,8 +118,9 @@ button {
 }
 
 .container {
-    max-width: 95%;
-    margin:0 auto;
+    max-width: 1300px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
 }
 .custom-cursor {
     width: 20px;
@@ -132,6 +133,29 @@ button {
     pointer-events: none;
     transform: translate(-50%, -50%);
 }
+
+
+/* smooth scroll */
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
+
 
 
 
@@ -147,12 +171,15 @@ button {
 
 /* Large screens */
 @media (min-width: 1024px) {
-    /* Styles for screens equal to or larger than 1024px */
+
 }
 
 /* Extra Large screens */
 @media (min-width: 1280px) {
-    /* Styles for screens equal to or larger than 1280px */
+.container {
+        max-width: 1300px;
+       margin:0 auto;
+    }
 }
 
 /* 2 Extra Large screens */

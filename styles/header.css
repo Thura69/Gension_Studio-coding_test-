@@ -1,18 +1,22 @@
 
 .site_header{
-    position: fixed;
+    position:fixed;
     align-items: center;
-    background-color:transparent;
+    background-color:white;
     justify-content: space-between;
     top: 0;
     left: 0;
+    user-select: none;
+    pointer-events: none;
     right: 0;
+    z-index: 99;
+    height: var(--header-height);
+
 }
 .site_container, .site_first-part{
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: transparent;
     height: var(--header-height);
     align-items: center;
     justify-content: space-between;
@@ -21,6 +25,7 @@
 .site_first-part{
     width: 70%;
     height: auto;
+    background: white;
     justify-content: space-evenly;
 }
 .site_logo{
@@ -54,6 +59,7 @@
 
 #toggle input {
     position: absolute;
+    pointer-events: initial;
     top: 5px;
     left: 16px;
     width: 30px;

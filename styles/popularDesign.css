@@ -1,0 +1,130 @@
+#site_popular{
+    /* background-color: var(--text-color-light); */
+    margin-top: 70px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.site_popular_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.site_popular_top ul{
+    align-items: center;
+    display: none;
+    gap: 10px;
+    color:var(--title-color)
+}
+
+.site_popular_bottom{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    gap:6px
+}
+.popular_card{
+    width: 100%;
+    background-color: var(--text-color-light);
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.swiper {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.popular_car_view{
+    width: 400px;
+    display: none;
+    opacity: 1;
+}
+.popular_car_view h3, .popular_card h4{
+    color:black;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.popular_card_content{
+    display: flex;
+    width: 100%;
+    margin:10px 0 10px 0;
+    justify-content: space-between;
+}
+.popular_card img{
+    max-width: 300px;
+    width: 280px;
+    max-height: 300px;
+}
+
+/* custom bullet */
+.swiper-pagination-bullets{
+    color: var(--title-color);
+}
+.swiper-pagination-bullet-active-main{
+    color: white;
+    border:1px solid black;
+}
+
+/* Small screens */
+@media screen and (min-width: 640px) {
+.popular_card{
+    width: 100%;
+}
+}
+
+/* Medium screens */
+@media screen and (min-width: 768px) {
+    /* Styles for screens equal to or larger than 768px */
+}
+
+/* Large screens */
+@media screen and (min-width: 1024px) {
+#site_popular{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.popular_card{
+width: 370px;
+}
+
+.popular_card img {
+    max-width: 280px;
+    width: 250px;
+    max-height: 200px;
+}
+
+
+}
+
+/* Extra Large screens */
+@media screen and (min-width: 1280px) {
+  
+.popular_car_view {
+        display: flex;
+    }
+.site_popular_top ul{
+    display: flex;
+}
+.popular_card {
+    width: 337px;
+}
+
+.popular_card img {
+    max-width: 280px;
+    width: 250px;
+    max-height: 280px;
+}
+    /* Styles for screens equal to or larger than 1280px */
+}
+
+/* 2 Extra Large screens */
+@media screen and (min-width: 1536px) {
+    /* Styles for screens equal to or larger than 1536px */
+}
