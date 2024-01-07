@@ -17,8 +17,6 @@
     position: absolute;
     right: 100px;
     bottom:0px;
-    border:1px solid var(--text-color);
-    padding:10px;
     display: none;
     transform: translateX( 100px);
 } 
@@ -46,6 +44,7 @@
     width: 100%;
     padding-left: 5px;
     padding-right: 5px;
+    margin-top: 10px;
 }
 
 .site_contact_button_button{
@@ -112,16 +111,30 @@
     margin-top: 150px;
     margin-bottom: 120px;
 }
+.site_contact_content_header{
+    font-size: var(--biggest-font-size);
+}
+.site_contact_img_container img {
+     width: 500px;
+ }
+ .site_contact_parent {
+     gap: 60px;
+ }
 .site_contact_content_container{
     width: 50%;
 }
  .site_contact_img_two {
-     height: 250px;
-     bottom: 80px;
+     height: 300px;
+     bottom: 20px;
+     padding:10px;
+     border:1px solid var(--text-color);
+     background-color: var(--text-color);
  }
 
     /* Styles for screens equal to or larger than 1280px */
 }
+
+
 
 /* 2 Extra Large screens */
 @media screen and (min-width: 1536px) {

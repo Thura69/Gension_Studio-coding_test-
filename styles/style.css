@@ -82,6 +82,7 @@ body {
     /* for darkmode */
     transition: .5s;
     cursor: none;
+    overflow: hidden;
 }
 
 h1,

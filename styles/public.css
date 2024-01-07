@@ -1,0 +1,57 @@
+#site_public{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 490px;
+}
+.public_parent{
+    display: flex;
+    height: 100%;
+    margin-top: 30px;
+}
+.public_rates{
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+}
+.public_rate_item{
+    display: flex;
+    flex-direction: column;
+}
+.public_contact{
+    margin:70px 0 70px 20%;
+}
+.media_track_container{
+    width: 100%;
+    left: 20%;
+    overflow: hidden;
+    position: relative;
+}
+
+.media_track img{
+width: 30vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+
+.media_track{
+    display: flex;
+        gap: 4vmin;
+        position: absolute;
+        user-select: none;
+        /* -- Prevent image highlighting -- */
+}
+
+.public_contact form{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+}
+.public_contact input, textarea {
+border-top:1px solid  var(--text-color);
+border-bottom:1px solid  var(--text-color);
+border-left: none;
+border-right: none;
+outline: none;
+ padding:8px;
+}

@@ -1,0 +1,14 @@
+.site_latest_container{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px;
+    margin-top: 20px;
+}
+
+.site_latest_card{
+    display: flex;
+    justify-content: center;
+}
+.site_latest_card h4{
+    font-weight: 100;
+}
