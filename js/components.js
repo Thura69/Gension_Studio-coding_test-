@@ -25,6 +25,7 @@ fetch('./components/header.html')
 
             siteOverLayListTag.forEach(function (e) {
                 e.addEventListener('click', () => {
+                    toggleCheck.checked = false;
                     siteoverLayTag.classList.toggle('site_over-lay_active');
             //menu opacity
             siteOverLayParent.classList.toggle('site_over-lay_parent_active')

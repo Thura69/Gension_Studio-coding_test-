@@ -48,12 +48,12 @@ fetch('./components/home.html')
                 origin: 'bottom', distance: '20px',
                 easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
-            ScrollReveal().reveal('.site_home_search_button', {
-                delay: 1100,
-                duration: 2800,
-                origin: 'bottom', distance: '20px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
-            });
+            // ScrollReveal().reveal('.site_home_search_button', {
+            //     delay: 1100,
+            //     duration: 2800,
+            //     origin: 'bottom', distance: '20px',
+            //     easing: 'cubic-bezier(0.5, 0, 0, 1)'
+            // });
             ScrollReveal().reveal('.site_home_search', {
                 delay: 1200,
                 duration: 3000,

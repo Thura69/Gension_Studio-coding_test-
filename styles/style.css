@@ -112,7 +112,7 @@ img {
 }
 
 button {
-    cursor: pointer;
+    box-sizing: border-box;
     border: none;
     outline: none;
     text-transform: uppercase;

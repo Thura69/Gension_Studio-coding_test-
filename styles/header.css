@@ -1,3 +1,6 @@
+#header{
+    background-color: white;
+}
 .site_container{
     position: fixed;
     align-items: center;
@@ -106,26 +109,31 @@
 .site_over-lay{
     width: 100svw;
     height:100svh;
-    position: absolute;
+    position: fixed;
     left: 0;
     pointer-events: initial;
+    background-color: white;
+    z-index: 100;
     right: 0;
     opacity: 0;
+    display: none;
 }
 .site_over-lay_active{
     opacity: 1;
+    display:initial;
 }
 .site_over-lay_parent{
-    background-color: rgb(251, 251, 251);
-    opacity: 0;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
     width: 100%;
     height: 100%;
-    display: flex;
     transition: all 500ms ease-in-out;
-    justify-content: center;
-    align-items: start;
     padding-top:50px;
     text-transform: uppercase;
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: start;
     font-weight: 500;
 }
 .site_over-lay_parent_active{
@@ -171,6 +179,9 @@
 /* Extra Large screens */
 @media screen and (min-width: 1280px) {
     #toggle{
+        display: none;
+    }
+    .site_over-lay{
         display: none;
     }
     .site_first-part{

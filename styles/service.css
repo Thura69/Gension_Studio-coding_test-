@@ -1,6 +1,6 @@
-#site_contact{
-    margin-top: 80px;
-    margin-bottom: 80px;
+#site_service{
+    padding-top: 100px;
+        padding-bottom: 100px;
 }
 .site_contact_parent{
     display: flex;
@@ -77,6 +77,7 @@
         gap:30px;
     }
     .site_contact_img_two{
+        height: 150px;
         display: initial;
     }
     .site_contact_img_container img{
@@ -107,7 +108,7 @@
 
 /* Extra Large screens */
 @media screen and (min-width: 1280px) {
-#site_contact{
+#site_service{
     padding-top: 100px;
 }
 .site_contact_content_header{
