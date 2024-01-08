@@ -17,48 +17,32 @@ fetch('./components/home.html')
                 dropDownIcon.classList.toggle('drop_down_icon_active')
             })
 
+
+
+    const sr = ScrollReveal({
+    origin: 'bottom', distance: '30px',
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    delay: 1100,
+   })
             //animations
-            ScrollReveal().reveal('.site_home_header', {
-                delay: 1100,
+            sr.reveal('.site_home_header', {
                 duration: 2000,
-                origin: 'bottom', distance: '30px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)',
             });
-            ScrollReveal().reveal('.site_home_p', {
-                delay: 1100,
+           sr.reveal('.site_home_p', {
                 duration: 2200,
-                origin: 'bottom', distance: '30px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
-            ScrollReveal().reveal('.site_home_p_2', {
-                delay: 1100,
+            sr.reveal('.site_home_p_2', {
                 duration: 2300,
-                origin: 'bottom', distance: '30px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
-            ScrollReveal().reveal('.site_home_search_cat', {
-                delay: 1100,
+            sr.reveal('.site_home_search_cat', {
                 duration: 2700,
-                origin: 'bottom', distance: '10px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
-            ScrollReveal().reveal('.site_home_search_input', {
-                delay: 1100,
+            sr.reveal('.site_home_search_input', {
                 duration: 2800,
-                origin: 'bottom', distance: '20px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
-            // ScrollReveal().reveal('.site_home_search_button', {
-            //     delay: 1100,
-            //     duration: 2800,
-            //     origin: 'bottom', distance: '20px',
-            //     easing: 'cubic-bezier(0.5, 0, 0, 1)'
-            // });
-            ScrollReveal().reveal('.site_home_search', {
+            sr.reveal('.site_home_search', {
                 delay: 1200,
                 duration: 3000,
-                origin: 'bottom', distance: '20px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
 
             })

@@ -6,49 +6,43 @@ fetch('./components/service.html')
             document.getElementById('site_service').innerHTML = html;
 
 
+
+            const sr_se = ScrollReveal({
+                origin: 'bottom',
+                distance: '20px',
+                easing: 'cubic-bezier(0.5, 0, 0, 1)'
+            });
+
             
               //animations
-            ScrollReveal().reveal('.site_contact_img_one', {
+            sr_se.reveal('.site_contact_img_one', {
                 delay: 500,
                 duration: 3000,
-                origin: 'bottom', distance: '30px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
-            ScrollReveal().reveal('.site_contact_content_header', {
+           sr_se.reveal('.site_contact_content_header', {
                 delay: 200,
                 duration: 2200,
-                origin: 'bottom', distance: '30px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
-            ScrollReveal().reveal('.site_contact_content_p_one', {
+           sr_se.reveal('.site_contact_content_p_one', {
                 delay: 300,
                 duration: 2300,
-                origin: 'bottom', distance: '30px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
-            ScrollReveal().reveal('.site_contact_content_p_two', {
+            sr_se.reveal('.site_contact_content_p_two', {
                 delay: 400,
                 duration: 2400,
-                origin: 'bottom', distance: '30px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
-            ScrollReveal().reveal('.site_contact_button_button', {
+            sr_se.reveal('.site_contact_button_button', {
                 delay: 500,
                 duration: 2500,
-                origin: 'bottom', distance: '20px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
-            ScrollReveal().reveal('.site_contact_img_two', {
-                delay: 600,
+           sr_se.reveal('.site_contact_img_two', {
+                delay: 700,
                 duration: 2800,
-                origin: 'bottom', distance: '20px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
+               
             });
-            ScrollReveal().reveal('.site_contact_button_container', {
-                delay: 500,
+           sr_se.reveal('.site_contact_button_container', {
+                delay: 600,
                 duration: 2400,
-                origin: 'bottom', distance: '30px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
 
 

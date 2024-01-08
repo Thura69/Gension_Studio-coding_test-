@@ -47,20 +47,14 @@ let newSwiper = new Swiper(".new-swiper", {
          }
     }
 });
-            
+    const sr_po = ScrollReveal({
+       delay: 100,
+       duration: 2000,
+       origin: 'bottom', distance: '30px',
+       easing: 'cubic-bezier(0.5, 0, 0, 1)'
+})
                //animations
-            ScrollReveal().reveal('.site_popular_head', {
-                delay: 100,
-                duration: 2000,
-                origin: 'bottom', distance: '30px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
-            });
-            ScrollReveal().reveal('.site_popular_list', {
-                delay: 200,
-                duration: 2200,
-                origin: 'bottom', distance: '30px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
-            });
+            sr_po.reveal('.site_popular_head,.site_popular_list');
 
             })
         });
