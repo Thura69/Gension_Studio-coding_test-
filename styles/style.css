@@ -9,6 +9,7 @@
     --first-color: #404A47;
     --first-color-alt: #61716c;
     --title-color: hsl(355, 4%, 15%);
+    --title-color-light: hsl(0, 3%, 23%);
     --text-color: #404A47;
     --text-color-light: #515d59;
     --body-color: #fff;
@@ -68,11 +69,13 @@ html {
 
 body,
 button,
-input {
+input,
+textarea
+{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     outline: none;
-    border:none;
+    z-index: -1;
 }
 
 body {
@@ -80,9 +83,9 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
     /* for darkmode */
-    transition: .5s;
+    transition: 2s;
+    overflow-x: hidden;
     cursor: none;
-    overflow: hidden;
 }
 
 h1,
@@ -91,14 +94,16 @@ h3,
 h4 {
     color: var(--title-color);
 }
-
+p{
+    font-size: var(--smaller-font-size);
+}
 ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--contaier-color);
 }
 
 img {
@@ -116,6 +121,12 @@ button {
     padding: 5px 15px 5px 15px ;
     background-color: var(--title-color);
     color: var(--container-color);
+transition: 1s;
+}
+
+button:hover{
+background-color: var(--title-color-light);
+border-radius: 10px;
 }
 
 .container {
@@ -156,9 +167,13 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
     pointer-events: none;
 }
+.active-link {
+     color: red;
+     /* Change to the color you want for the active link */
+     /* Add any other styles or animations here */
+ }
 
-
-
+ 
 
 /* Small screens */
 @media (min-width: 640px) {

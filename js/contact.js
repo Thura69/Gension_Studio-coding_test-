@@ -44,9 +44,9 @@ fetch('./components/contact.html')
                 origin: 'bottom', distance: '20px',
                 easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });
-            ScrollReveal().reveal('.site_home_search', {
-                delay: 1200,
-                duration: 3000,
+            ScrollReveal().reveal('.site_contact_button_container', {
+                delay: 400,
+                duration: 2400,
                 origin: 'bottom', distance: '20px',
                 easing: 'cubic-bezier(0.5, 0, 0, 1)'
             });

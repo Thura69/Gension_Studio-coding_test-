@@ -4,13 +4,13 @@ document.addEventListener('mousemove', (e) => {
   cursor.style.top = `${e.clientY}px`;
 });
 
-const lenis = new Lenis()
+// const lenis = new Lenis()
 
+// function raf(time) {
+//   lenis.raf(time)
+//   requestAnimationFrame(raf)
+// }
 
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
+// requestAnimationFrame(raf)
 
-requestAnimationFrame(raf)
 

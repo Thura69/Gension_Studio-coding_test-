@@ -1,17 +1,13 @@
-
-.site_header{
-    position:fixed;
+.site_container{
+    position: fixed;
     align-items: center;
-    background-color:white;
     justify-content: space-between;
     top: 0;
     left: 0;
-    user-select: none;
-    pointer-events: none;
+    background-color: white;
+    z-index: 999;
     right: 0;
-    z-index: 99;
     height: var(--header-height);
-
 }
 .site_container, .site_first-part{
     display: flex;
@@ -25,7 +21,7 @@
 .site_first-part{
     width: 70%;
     height: auto;
-    background: white;
+    pointer-events:initial;
     justify-content: space-evenly;
 }
 .site_logo{
@@ -112,8 +108,8 @@
     height:100svh;
     position: absolute;
     left: 0;
+    pointer-events: initial;
     right: 0;
-    opacity: 0;
     opacity: 0;
 }
 .site_over-lay_active{

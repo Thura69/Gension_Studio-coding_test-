@@ -1,6 +1,6 @@
 .site_latest_container{
     display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap:10px;
     margin-top: 20px;
 }
@@ -11,4 +11,44 @@
 }
 .site_latest_card h4{
     font-weight: 100;
+}
+
+/* Small screens */
+@media screen and (min-width: 640px) {
+    /* Styles for screens equal to or larger than 640px */
+}
+
+/* Medium screens */
+@media screen and (min-width: 768px) {
+.site_latest_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1024px) {
+.site_latest_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+}
+
+/* Extra Large screens */
+@media screen and (min-width: 1280px) {
+#site_latest{
+padding-top: 100px;
+}
+    /* Styles for screens equal to or larger than 1280px */
+}
+
+
+
+/* 2 Extra Large screens */
+@media screen and (min-width: 1536px) {
+    /* Styles for screens equal to or larger than 1536px */
 }

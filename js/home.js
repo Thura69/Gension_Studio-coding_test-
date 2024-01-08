@@ -22,7 +22,7 @@ fetch('./components/home.html')
                 delay: 1100,
                 duration: 2000,
                 origin: 'bottom', distance: '30px',
-                easing: 'cubic-bezier(0.5, 0, 0, 1)'
+                easing: 'cubic-bezier(0.5, 0, 0, 1)',
             });
             ScrollReveal().reveal('.site_home_p', {
                 delay: 1100,

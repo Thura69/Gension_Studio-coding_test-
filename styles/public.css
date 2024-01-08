@@ -1,16 +1,17 @@
 #site_public{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height: 490px;
+    margin-top:50px;
+    margin-bottom:50px;
 }
 .public_parent{
     display: flex;
+    flex-direction: column;
     height: 100%;
     margin-top: 30px;
 }
 .public_rates{
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+    justify-content: space-between;
     gap:20px;
 }
 .public_rate_item{
@@ -18,19 +19,24 @@
     flex-direction: column;
 }
 .public_contact{
-    margin:70px 0 70px 20%;
+    margin:70px 0 70px 0%;
 }
 .media_track_container{
+    display: none;
     width: 100%;
-    left: 20%;
+    /* left: 20%; */
     overflow: hidden;
     position: relative;
+}
+.media_track_mobile{
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 20px;
 }
 
 .media_track img{
 width: 30vmin;
-    object-fit: cover;
-    object-position: 100% center;
 }
 
 .media_track{
@@ -43,7 +49,7 @@ width: 30vmin;
 
 .public_contact form{
     display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         margin-top: 20px;
 }
@@ -52,6 +58,79 @@ border-top:1px solid  var(--text-color);
 border-bottom:1px solid  var(--text-color);
 border-left: none;
 border-right: none;
+padding:10px;
 outline: none;
- padding:8px;
+height: 40px;
+border:none
+}
+.public_contact button{
+    padding: 15px;
+}
+
+/* Small screens */
+@media screen and (min-width: 640px) {
+    /* Styles for screens equal to or larger than 640px */
+}
+
+/* Medium screens */
+@media screen and (min-width: 768px) {
+.media_track_mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1024px) {
+    .media_track_mobile {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+}
+
+/* Extra Large screens */
+@media screen and (min-width: 1280px) {
+#site_public {
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
+.media_track_mobile{
+    display: none;
+}
+.media_track_container{
+    display: flex;
+    left: 20%;
+}
+.public_parent{
+    margin-top: 50px;
+    flex-direction: row;
+}
+.public_rates{
+    flex-direction: column;
+    justify-content:start;
+}
+.public_contact {
+    margin: 70px 0 70px 23%;
+}
+.public_contact form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.public_contact input,textarea{
+border:1px solid var(--text-color)
+}
+    /* Styles for screens equal to or larger than 1280px */
+}
+
+
+
+/* 2 Extra Large screens */
+@media screen and (min-width: 1536px) {
+    /* Styles for screens equal to or larger than 1536px */
 }

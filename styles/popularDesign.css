@@ -86,8 +86,7 @@
 /* Large screens */
 @media screen and (min-width: 1024px) {
 #site_popular{
-    margin-top: 150px;
-    margin-bottom: 150px;
+    padding-top: 150px;
 }
 
 .popular_card{
